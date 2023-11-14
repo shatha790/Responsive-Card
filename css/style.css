@@ -77,18 +77,11 @@ html {
   display: inline-block;
   margin-bottom: 2rem;
 }
-/* if you replace it with img:hover the hover do not apply when we hover the img
-only apply when we hover img but in this caus we want the hover img apply when hover card apply
-so we want it to apply together
-*/
+
 .card:hover img {
   outline: 4px solid var(--img-border);
   transition: 0.2s;
 }
-/* .dark-mode {
-  background-color: black;
-  color: white;
-} */
 .toggle-btn {
   background-color: var(--toggle-btn);
   color: #fff;
