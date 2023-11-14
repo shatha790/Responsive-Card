@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #fff;
+  --text-title: #333;
+  --icon-color: #555;
+  --border-color: rgba(211, 211, 211, 0.486);
+  --box-shadow: rgba(0, 0, 0, 0.06);
+  --icon-hover: #666;
+  --img-border: #555;
+  --toggle-btn: #555;
+}
+body {
+  background: var(--background-color);
+  color: var(--text-title);
+}
+.dark-mode {
+  --background-color: black;
+  --text-title: #fff;
+  --icon-color: blueviolet;
+  --border-color: rgba(168, 92, 239, 0.486);
+  --icon-hover: rgb(168, 92, 239);
+  --box-shadow: rgba(168, 92, 239, 0.199);
+  --toggle-btn: blueviolet;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  padding: 9.6rem 0;
+}
+.card {
+  border: 1px rgba(211, 211, 211, 0.486) solid;
+  border-radius: 4px;
+  padding: 3.2rem;
+  text-align: center;
+  width: 220px;
+}
+.name {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.carer {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.icon {
+  font-size: 1.8rem;
+  color: var(--icon-color);
+}
+.icon:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+  color: var(--icon-hover);
+}
+.card:hover {
+  box-shadow: 0 2.4rem 4.8rem var(--box-shadow);
+  transform: translateY(-1.2rem);
+  transition: 0.6s;
+}
+.img {
+  width: 50%;
+  border-radius: 100%;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+/* if you replace it with img:hover the hover do not apply when we hover the img
+only apply when we hover img but in this caus we want the hover img apply when hover card apply
+so we want it to apply together
+*/
+.card:hover img {
+  outline: 4px solid var(--img-border);
+  transition: 0.2s;
+}
+/* .dark-mode {
+  background-color: black;
+  color: white;
+} */
+.toggle-btn {
+  background-color: var(--toggle-btn);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  border-radius: 20px;
+  height: 40px;
+  font-size: 1.6rem;
+  margin: -3.2rem auto 3rem auto;
+  cursor: pointer;
+}
+.toggle-btn img {
+  width: 25px;
+  margin-left: 10px;
+}
